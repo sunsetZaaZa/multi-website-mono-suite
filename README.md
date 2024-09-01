@@ -6,7 +6,7 @@ Node Version Manager:
 
 Prerequisite 
 ---
-* **NodeJS** <span style="margin-left: 18px; font-weight:200">22.7.0 was used</span>
+* **NodeJS** 22.7.0 was used
 * **npm**
 * **chocolatey - recommended because of quick nodejs update method** 
 	* **choco install nodejs --version="versionNumber"** 
@@ -17,8 +17,7 @@ Global install
 npm update -g npm
 npm install -g pnpm
 ```
-
-<span class=".expanse"><span class=".travel">why?</span> its the lessons learned from yarn and npm, npx. </span>
+why? its the lessons learned from yarn and npm, npx.
 
 Per project installs
 --------------------
@@ -27,8 +26,9 @@ pnpm i @types/node -D
 pnpm i vite-plugin-dts -D
 pnpm i vite-plugin-lib-inject-css -D
 pnpm i glob -D
-pnpm i eslint eslint-plugin-react -D
+pnpm i eslint-plugin-react -D
 ```
+**NOTE: The plugin eslint-plugin-react at the moment supports eslint7 and below. Upgrading to eslint8 installs it just fine. Then warnings are thrown during some build operations but everything seems to work okay. Downgrading back to eslint7 removes the warnings but new warnings show up to deprecated projects existing in the project now. The project punycode is not used or called anywhere within the codebase, the files to it merely exist within the projects dependency/required files list. Installing packages like shown above or pnpm install lead to stablity**
 
 Not a definative list of featureset
 ---
