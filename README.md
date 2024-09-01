@@ -1,15 +1,15 @@
 Tools
 ---------
 Node Version Manager:
-https://github.com/nvm-sh/nvm (Linux) 
-https://github.com/coreybutler/nvm-windows (Windows)
+ - https://github.com/nvm-sh/nvm (Linux) 
+ - https://github.com/coreybutler/nvm-windows (Windows)
 
 Prerequisite 
 ---
 * **NodeJS** <span style="margin-left: 18px; font-weight:200">22.7.0 was used</span>
 * **npm**
-* **chocolatey - recommended because of quick nodejs update method **
-	* **choco install nodejs --version="versionNumber" **
+* **chocolatey - recommended because of quick nodejs update method** 
+	* **choco install nodejs --version="versionNumber"** 
 
 Global install
 --------------
@@ -18,7 +18,7 @@ npm update -g npm
 npm install -g pnpm
 ```
 
-<span style="margin-left: 50px;"><span style="font-style: italic; padding-right: 20px;">why?</span> its the lessons learned from yarn and npm, npx. </span>
+<span class=".expanse"><span class=".travel">why?</span> its the lessons learned from yarn and npm, npx. </span>
 
 Per project installs
 --------------------
@@ -48,44 +48,42 @@ Not a definative list of featureset
 
 aeraven-webui
 -------------
-Framework: React
-Variant: TypeScript + SWC (https://swc.rs/)
-Type: Library
-One-time Executes: npx storybook@latest init
-Library: ES2023 , DOM , DOM.Iterable
-Targets: ES2020
-** Build Commands **
-Build Library: ``` pnpm build:lib ```
- ==What's Included==
-* aerave-webui components 
-	* ~/aeraven-webui/lib/main.ts 
-	* ~/aeraven-webui/lib/kingjulien
-	
-* storybook visual shows and tests
+* Framework: React
+* Variant: TypeScript + SWC (https://swc.rs/)
+* Type: Library
+* Library: ES2023 , DOM , DOM.Iterable
+* Targets: ES2020
+* **Build Commands**
+* Build Library: ``` pnpm build:lib ```
+ * **What's Included**
+    * ~/aeraven-webui/lib/components/
+    * storybook visual shows and tests
 
 everes-comyntas-forest
 ----------------------
-Framework: React
-Variant: TypeScript + SWC (https://swc.rs/)
-Type: Single Page Application
-Library: ES2023 , DOM , DOM.Iterable
-Targets: ES2023
-** Build Commands **
-Deployment Build: ``` pnpm build ```
- ==What's Included==
-* aeraven-webui components via lib build import
-* SPA itself
-* SPA purpose built ui components within project's source directory
+* Framework: React
+* Variant: TypeScript + SWC (https://swc.rs/)
+* Type: Single Page Application
+* Library: ES2023 , DOM , DOM.Iterable
+* Targets: ES2023
+* ** Build Commands **
+* Deployment Build: ``` pnpm build ```
+ * **What's Included**
+    * aeraven-webui components via lib build import
+    * SPA itself
+    * SPA purpose built ui components within project's source directory
+    * storybook visual shows and tests
 
 honey-biscuit-badger
 --------------------
-Framework: React
-Variant: TypeScript (uses Vite's builtin support for javascript, typescript, and jsx/tsx aka Rollup -> https://rollupjs.org/)
-Type: Single Page Application
-Library: ES2023 , DOM , DOM.Iterable
-Targets: ES2020
-Deployment Build: ``` pnpm build ```
- ==What's Included==
-* aeraven-webui components via direct import
-* SPA itself
-* SPA purpose built ui components within project's source directory
+* Framework: React
+* Variant: TypeScript (uses Vite's builtin support for javascript, typescript, and jsx/tsx aka Rollup -> https://rollupjs.org/)
+* Type: Single Page Application
+* Library: ES2023 , DOM , DOM.Iterable
+* Targets: ES2020
+* Deployment Build: ``` pnpm build ```
+ * **What's Included**
+    * aeraven-webui components via direct import
+    * SPA itself
+    * SPA purpose built ui components within project's source directory
+    * storybook visual shows and tests
